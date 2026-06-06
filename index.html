@@ -14,59 +14,70 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <main>
+<body class="bg-[hsl(221,100%,96%)] h-screen flex justify-center items-start md:items-center">
+  <main class="font-sans text-lg font-medium">
     <!-- Results section -->
-    <article>
-      <section>
-        <h1>Your Result</h1>
+    <article class="bg-white shadow-2xl max-w-sm md:max-w-3xl grid grid-cols-1 md:grid-cols-2 rounded-4xl">
+      <section class="flex flex-col items-center bg-linear-to-b from-[hsl(252,100%,67%)] to-[hsl(241,81%,54%)] p-8 md:p-10 rounded-bl-4xl rounded-br-4xl md:rounded-4xl">
+        <h1 class="text-[hsl(241,100%,89%)] mb-4 md:text-xl">Your Result</h1>
 
-        <div>
-          <div><strong>76</strong> <span>of 100</span></div>
+        <div class="size-35 md:size-50 bg-linear-to-b from-[hsla(256,72%,46%,1)] to-[hsla(241,72%,46%,0)] rounded-full flex justify-center items-center">
+          <div class="text-center">
+            <strong class="block text-white text-6xl md:text-8xl mt-4">76</strong> 
+            <span class="text-[hsl(241,100%,89%)] text-sm md:text-xl">of 100</span>
+          </div>
         </div>
+        
+        <h2 class="text-white font-bold text-2xl md:text-3xl mt-6 md:mt-8">Great</h2>
 
-        <h2>Great</h2>
-
-        <p>You scored higher than 65% of the people who have taken these tests.</p>
+        <p class="text-[hsl(241,100%,89%)] text-center text-pretty mt-2 mx-2">You scored higher than 65% of the people who have taken these tests.</p>
       </section>
 
       <!-- Summary section -->
-      <section>
-        <h2>Summary</h2>
+      <section class="p-8">
+        <h2 class="text-[hsl(224,30%,27%)] font-extrabold">Summary</h2>
 
-        <ul>
-          <li>
-            <ion-icon name="flash-outline" aria-hidden="true"></ion-icon>
-            <span>Reaction</span>
-            <div><strong>80</strong> <span>/ 100</span></div>
+        <ul class="flex flex-col gap-3 my-4">
+          <li class="flex justify-between p-4 bg-red-50 rounded-xl">
+            <div class="flex items-center">
+              <ion-icon class="text-[hsl(0,100%,67%)]" name="flash-outline" aria-hidden="true"></ion-icon>
+              <span class="text-[hsl(0,100%,67%)] pl-2">Reaction</span>
+            </div>
+            <div><strong class="font-bold">80</strong> <span class="text-[hsl(241,100%,89%)]">/ 100</span></div>
           </li>
-          <li>
-            <ion-icon name="bulb-outline" aria-hidden="true"></ion-icon>
-            <span>Memory</span>
-            <div><strong>92</strong> <span>/ 100</span></div>
+          <li class="flex justify-between p-4 bg-yellow-50 rounded-xl">
+            <div class="flex items-center">
+              <ion-icon class="text-[hsl(39,100%,56%)]" name="bulb-outline" aria-hidden="true"></ion-icon>
+              <span class="text-[hsl(39,100%,56%)] pl-2">Memory</span>
+            </div>
+            <div><strong class="font-bold">92</strong> <span class="text-[hsl(241,100%,89%)]">/ 100</span></div>
           </li>
-          <li>
-            <ion-icon name="chatbubble-ellipses-outline" aria-hidden="true"></ion-icon>
-            <span>Verbal</span>
-            <div><strong>61</strong> <span>/ 100</span></div>
+          <li class="flex justify-between p-4 bg-green-50 rounded-xl">
+            <div class="flex items-center">
+              <ion-icon class="text-[hsl(166,100%,37%)]" name="chatbubble-ellipses-outline" aria-hidden="true"></ion-icon>
+              <span class="text-[hsl(166,100%,37%)] pl-2">Verbal</span>
+            </div>
+            <div><strong class="font-bold">61</strong> <span class="text-[hsl(241,100%,89%)]">/ 100</span></div>
           </li>
-          <li>
-            <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
-            <span>Visual</span>
-            <div><strong>72</strong> <span>/ 100</span></div>
+          <li class="flex justify-between p-4 bg-blue-50 rounded-xl">
+            <div class="flex items-center">
+              <ion-icon class="text-[hsl(234,85%,45%)]" name="eye-outline" aria-hidden="true"></ion-icon>
+              <span class="text-[hsl(234,85%,45%)] pl-2">Visual</span>
+            </div>
+            <div><strong class="font-bold">72</strong> <span class="text-[hsl(241,100%,89%)]">/ 100</span></div>
           </li>
         </ul>
 
-        <a href="#">Continue</a>
+        <a class="inline-block bg-[hsl(224,30%,27%)] text-white text-center rounded-4xl p-4 w-full mt-2 hover:opacity-90 transition-all duration-300 hover:bg-linear-to-b hover:from-[hsla(256,72%,46%,1)] hover:to-[hsla(241,72%,46%,0)] hover:text-xl" href="#">Continue</a>
       </section>
     </article>
   </main>
   
-  <!-- footer -->
+  <!-- footer
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </footer>
+  </footer> -->
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
